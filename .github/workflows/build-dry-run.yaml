@@ -104,3 +104,5 @@ jobs:
           generate_release_notes: false
           name: ${{ inputs.create_release }}
           tag_name: ${{ inputs.create_release }}
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # workaround for node 22 warning
